@@ -15,14 +15,12 @@ ans = origin
 for i in range(N-1, 0, -2):
     res += card[i]
     res -= card[i-1]
-    print(res)
     ans = max(ans, res)
 
 res = origin
 for i in range(N-2, 1, -2):
     res -= card[i]
     res += card[i-1]
-    print(res)
     ans = max(ans, res)
 
 print(ans)
